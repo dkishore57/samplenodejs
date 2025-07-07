@@ -2,9 +2,9 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-    host: 'sampledk.mysql.database.azure.com',
-    user: 'fxeuocmiqm',
-    password: 'E04ffGJX0pflum$T',
+    host: 'sampledk-server.mysql.database.azure.com',
+    user: 'vvqiriduzg',
+    password: 'ZJrziMhYe50st$JT',
     database: 'auth_demo'
 });
 
