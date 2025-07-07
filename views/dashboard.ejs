@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-box {
+      transition: transform 0.2s;
+    }
+    .card-box:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NodeAuthApp</a>
+      <div class="d-flex">
+        <span class="text-white me-3">Welcome, <%= email %></span>
+        <a href="/logout" class="btn btn-outline-light">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h3>Your Dashboard</h3>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card card-box p-3 shadow-sm">
+          <h5>📊 Account Summary</h5>
+          <p>Manage your profile, view login history, and update security settings.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-box p-3 shadow-sm">
+          <h5>📬 Messages</h5>
+          <p>You have no new messages. Notifications and updates will appear here.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-box p-3 shadow-sm">
+          <h5>💡 Tips</h5>
+          <ul>
+            <li>Use strong passwords</li>
+            <li>Log out after use</li>
+            <li>Update profile info regularly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
